@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace BerlinClock
+﻿namespace BerlinClock
 {
-    public interface ITimeConverter
+    public interface ITimeConverter<T>
     {
-        String convertTime(String aTime);
+        T ConvertFrom(string time);
     }
 }
