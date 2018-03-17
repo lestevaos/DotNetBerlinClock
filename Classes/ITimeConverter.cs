@@ -2,6 +2,6 @@
 {
     public interface ITimeConverter<T>
     {
-        T ConvertFrom(string time);
+        T ConvertFrom(Time time);
     }
 }

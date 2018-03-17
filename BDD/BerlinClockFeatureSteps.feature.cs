@@ -150,6 +150,23 @@ testRunner.Then("the clock should look like", "Y\r\nRRRR\r\nRRRR\r\nOOOOOOOOOOO\
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Late for tea")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "The Berlin Clock")]
+        public virtual void LateForTea()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Late for tea", ((string[])(null)));
+#line 50
+this.ScenarioSetup(scenarioInfo);
+#line 51
+testRunner.When("the time is \"17:01:23\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 52
+testRunner.Then("the clock should look like", "O\r\nRRRO\r\nRROO\r\nOOOOOOOOOOO\r\nYOOO", ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

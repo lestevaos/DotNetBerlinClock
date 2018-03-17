@@ -46,3 +46,14 @@ RRRR
 OOOOOOOOOOO
 OOOO
 """
+
+Scenario: Late for tea
+When the time is "17:01:23"
+Then the clock should look like
+"""
+O
+RRRO
+RROO
+OOOOOOOOOOO
+YOOO
+"""

@@ -4,21 +4,27 @@ using TechTalk.SpecFlow;
 namespace BerlinClock
 {
     [Binding]
-    public class TheBerlinClockSteps
+    public class TheBerlinClockFeatureSteps
     {
         private ITimeConverter<string> _berlinClockConverter = new BerlinClockTimeConverter();
-        private string _theTime;
+        private Time _time;
 
         [When(@"the time is ""(.*)""")]
-        public void WhenTheTimeIs(string time)
+        public void WhenTheTimeIs(Time time)
         {
-            _theTime = time;
+            _time = time;
+        }
+
+        [StepArgumentTransformation(@"(\d{2}:\d{2}:\d{2})")]
+        public Time TimeTransform(string time)
+        {
+            return Time.Parse(time);
         }
 
         [Then(@"the clock should look like")]
         public void ThenTheClockShouldLookLike(string theExpectedBerlinClockOutput)
         {
-            Assert.AreEqual(theExpectedBerlinClockOutput, _berlinClockConverter.ConvertFrom(_theTime));
+            Assert.AreEqual(theExpectedBerlinClockOutput, _berlinClockConverter.ConvertFrom(_time));
         }
     }
 }
