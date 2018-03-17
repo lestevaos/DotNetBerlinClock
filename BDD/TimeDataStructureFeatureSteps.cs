@@ -59,14 +59,12 @@ namespace BerlinClock
             try
             {
                 new Time(_hours, _minutes, _seconds);
+                Assert.Fail();
             }
             catch (ArgumentException e)
             {
                 Assert.AreEqual(parameterName, e.ParamName);
-                return;
             }
-
-            Assert.Inconclusive();
         }
 
         [Then(@"the programmer should get a constructed instance that looks like ""(.*)""")]

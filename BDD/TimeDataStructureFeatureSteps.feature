@@ -5,33 +5,6 @@
 
 # Parse
 
-#   Expected errors
-
-Scenario: Parse null
-Then the programmer should get a parse error in the time portion
-
-Scenario: Parse empty string
-When the time is parsed as ""
-Then the programmer should get a parse error in the time portion
-
-Scenario: Parse white-space
-When the time is parsed as " "
-Then the programmer should get a parse error in the time portion
-
-Scenario: Parse asdf
-When the time is parsed as "asdf"
-Then the programmer should get a parse error in the time portion
-
-Scenario: Parse 11
-When the time is parsed as "11"
-Then the programmer should get a parse error in the time portion
-
-Scenario: Parse 11:AA:00
-When the time is parsed as "11:AA:00"
-Then the programmer should get a parse error in the time portion
-
-#   /Expected errors
-
 #   Expected successes
 
 Scenario: Parse Midnight 00:00:00 (Beginning Of Day)
@@ -64,9 +37,68 @@ Then the programmer should get a parsed instance that looks like "24:00:00"
 
 #   /Expected successes
 
+#   Expected errors
+
+Scenario: Parse null
+Then the programmer should get a parse error in the time portion
+
+Scenario: Parse empty string
+When the time is parsed as ""
+Then the programmer should get a parse error in the time portion
+
+Scenario: Parse whitespace string
+When the time is parsed as " "
+Then the programmer should get a parse error in the time portion
+
+Scenario: Parse asdf
+When the time is parsed as "asdf"
+Then the programmer should get a parse error in the time portion
+
+Scenario: Parse 11
+When the time is parsed as "11"
+Then the programmer should get a parse error in the time portion
+
+Scenario: Parse 11:AA:00
+When the time is parsed as "11:AA:00"
+Then the programmer should get a parse error in the time portion
+
+#   /Expected errors
+
 # /Parse
 
 # Ctor
+
+#   Expected successes
+
+Scenario: Ctor Midnight 00:00:00 (Beginning Of Day)
+When the time is constructed using 0, 0, 0
+Then the programmer should get a constructed instance that looks like "00:00:00"
+
+Scenario: Ctor Morning 08:04:11
+When the time is constructed using 8, 4, 11
+Then the programmer should get a constructed instance that looks like "08:04:11"
+
+Scenario: Ctor Noon 12:00:00
+When the time is constructed using 12, 0, 0
+Then the programmer should get a constructed instance that looks like "12:00:00"
+
+Scenario: Ctor Afternoon 13:15:09
+When the time is constructed using 13, 15, 9
+Then the programmer should get a constructed instance that looks like "13:15:09"
+
+Scenario: Ctor Late for Tea 17:00:01
+When the time is constructed using 17, 0, 1
+Then the programmer should get a constructed instance that looks like "17:00:01"
+
+Scenario: Ctor Gym time 18:00:00
+When the time is constructed using 18, 0, 0
+Then the programmer should get a constructed instance that looks like "18:00:00"
+
+Scenario: Ctor Midnight 24:00:00 (End Of Day)
+When the time is constructed using 24, 0, 0
+Then the programmer should get a constructed instance that looks like "24:00:00"
+
+#   /Expected successes
 
 #   Expected errors
 
@@ -109,37 +141,5 @@ Then the programmer should get a constructor error in the seconds portion
 #     /Seconds
 
 #   /Expected errors
-
-#   Expected successes
-
-Scenario: Ctor Midnight 00:00:00 (Beginning Of Day)
-When the time is constructed using 0, 0, 0
-Then the programmer should get a constructed instance that looks like "00:00:00"
-
-Scenario: Ctor Morning 08:04:11
-When the time is constructed using 8, 4, 11
-Then the programmer should get a constructed instance that looks like "08:04:11"
-
-Scenario: Ctor Noon 12:00:00
-When the time is constructed using 12, 0, 0
-Then the programmer should get a constructed instance that looks like "12:00:00"
-
-Scenario: Ctor Afternoon 13:15:09
-When the time is constructed using 13, 15, 9
-Then the programmer should get a constructed instance that looks like "13:15:09"
-
-Scenario: Ctor Late for Tea 17:00:01
-When the time is constructed using 17, 0, 1
-Then the programmer should get a constructed instance that looks like "17:00:01"
-
-Scenario: Ctor Gym time 18:00:00
-When the time is constructed using 18, 0, 0
-Then the programmer should get a constructed instance that looks like "18:00:00"
-
-Scenario: Ctor Midnight 24:00:00 (End Of Day)
-When the time is constructed using 24, 0, 0
-Then the programmer should get a constructed instance that looks like "24:00:00"
-
-#   /Expected successes
 
 # /Ctor
