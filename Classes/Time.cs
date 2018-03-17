@@ -61,7 +61,7 @@ namespace BerlinClock
 
         public override string ToString()
         {
-            return $"{Hours.ToString().PadLeft(2, '0')}:{Minutes.ToString().PadLeft(2, '0')}:{Seconds.ToString().PadLeft(2, '0')}";
+            return $"{Hours:00}:{Minutes:00}:{Seconds:00}";
         }
     }
 }
