@@ -149,9 +149,9 @@ namespace BerlinClock
         #region IComparable
 
         [TestCaseSource(nameof(CompareTo_DataSource))]
-        public void NonGeneric_CompareTo_Must_Return_Expected(Time x, object y, int expected)
+        public void IComparable_CompareTo_Must_Return_Expected(Time x, object y, int expected)
         {
-            Assert.AreEqual(expected, x.CompareTo(y));
+            Assert.AreEqual(expected, ((IComparable)x).CompareTo(y));
         }
 
         private static IEnumerable<object[]> CompareTo_DataSource()
@@ -166,16 +166,10 @@ namespace BerlinClock
                 yield return new object[] { /* x: */ item[0], /* y: */ item[1], /* expected: */ 1 };
         }
 
-        [TestCaseSource(nameof(CompareTo_DataSource))]
-        public void Generic_CompareTo_Must_Return_Expected(Time x, Time y, int expected)
-        {
-            Assert.AreEqual(expected, x.CompareTo(y));
-        }
-
         [TestCaseSource(nameof(A_Time_Instance_And_A_NonTime_Instance_DataSource))]
-        public void NonGeneric_CompareTo_Must_Throw_ArgumentException_When_Argument_Is_Not_A_Time_Instance(Time x, object y)
+        public void IComparable_CompareTo_Must_Throw_ArgumentException_When_Argument_Is_Not_A_Time_Instance(Time x, object y)
         {
-            Assert.Throws<ArgumentException>(() => x.CompareTo(y));
+            Assert.Throws<ArgumentException>(() => ((IComparable)x).CompareTo(y));
         }
 
         private static IEnumerable<object[]> A_Time_Instance_And_A_NonTime_Instance_DataSource()
@@ -189,9 +183,15 @@ namespace BerlinClock
         }
 
         [Test]
-        public void NonGeneric_CompareTo_Must_Throw_ArgumentNullException_When_Argument_Is_Null()
+        public void IComparable_CompareTo_Must_Throw_ArgumentNullException_When_Argument_Is_Null()
         {
-            Assert.Throws<ArgumentNullException>(() => new Time(12, 0, 0).CompareTo(null));
+            Assert.Throws<ArgumentNullException>(() => ((IComparable)new Time(12, 0, 0)).CompareTo(null));
+        }
+
+        [TestCaseSource(nameof(CompareTo_DataSource))]
+        public void IComparable_Of_Time_CompareTo_Must_Return_Expected(Time x, Time y, int expected)
+        {
+            Assert.AreEqual(expected, ((IComparable<Time>)x).CompareTo(y));
         }
 
         #endregion
@@ -199,15 +199,15 @@ namespace BerlinClock
         #region IEquatable
 
         [TestCaseSource(nameof(Equals_DataSource))]
-        public void Generic_Equals_Must_Return_True(Time x, Time y)
+        public void IEquatable_Of_Time_Equals_Must_Return_True(Time x, Time y)
         {
-            Assert.IsTrue(x.Equals(y));
+            Assert.IsTrue(((IEquatable<Time>)x).Equals(y));
         }
 
         [TestCaseSource(nameof(NotEquals_DataSource))]
-        public void Generic_Equals_Must_Return_False(Time x, Time y)
+        public void IEquatable_Of_Time_Equals_Must_Return_False(Time x, Time y)
         {
-            Assert.IsFalse(x.Equals(y));
+            Assert.IsFalse(((IEquatable<Time>)x).Equals(y));
         }
 
         #endregion
@@ -215,25 +215,25 @@ namespace BerlinClock
         #region Overrides
 
         [TestCaseSource(nameof(Equals_DataSource))]
-        public void NonGeneric_Equals_Must_Return_True(Time x, object y)
+        public void Equals_Must_Return_True(Time x, object y)
         {
             Assert.IsTrue(x.Equals(y));
         }
 
         [TestCaseSource(nameof(NotEquals_DataSource))]
-        public void NonGeneric_Equals_Must_Return_False(Time x, object y)
+        public void Equals_Must_Return_False(Time x, object y)
         {
             Assert.IsFalse(x.Equals(y));
         }
 
         [TestCaseSource(nameof(A_Time_Instance_And_A_NonTime_Instance_DataSource))]
-        public void NonGeneric_Equals_Must_Return_False_When_Argument_Is_Not_A_Time_Instance(Time x, object y)
+        public void Equals_Must_Return_False_When_Argument_Is_Not_A_Time_Instance(Time x, object y)
         {
             Assert.IsFalse(x.Equals(y));
         }
 
         [Test]
-        public void NonGeneric_Equals_Must_Return_False_When_Argument_Is_Null()
+        public void Equals_Must_Return_False_When_Argument_Is_Null()
         {
             Assert.IsFalse(new Time(15, 10, 8).Equals(null));
         }
