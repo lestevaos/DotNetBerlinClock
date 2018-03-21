@@ -90,11 +90,11 @@ namespace BerlinClock.BDD
         public virtual void ParseMidnight000000BeginningOfDay()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Parse Midnight 00:00:00 (Beginning Of Day)", ((string[])(null)));
-#line 10
+#line 14
 this.ScenarioSetup(scenarioInfo);
-#line 11
+#line 15
 testRunner.When("the time is parsed as \"00:00:00\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 12
+#line 16
 testRunner.Then("the programmer should get a parsed instance that looks like \"00:00:00\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -106,11 +106,11 @@ testRunner.Then("the programmer should get a parsed instance that looks like \"0
         public virtual void ParseMorning080411()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Parse Morning 08:04:11", ((string[])(null)));
-#line 14
+#line 18
 this.ScenarioSetup(scenarioInfo);
-#line 15
+#line 19
 testRunner.When("the time is parsed as \"08:04:11\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 16
+#line 20
 testRunner.Then("the programmer should get a parsed instance that looks like \"08:04:11\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -122,11 +122,11 @@ testRunner.Then("the programmer should get a parsed instance that looks like \"0
         public virtual void ParseNoon120000()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Parse Noon 12:00:00", ((string[])(null)));
-#line 18
+#line 22
 this.ScenarioSetup(scenarioInfo);
-#line 19
+#line 23
 testRunner.When("the time is parsed as \"12:00:00\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 20
+#line 24
 testRunner.Then("the programmer should get a parsed instance that looks like \"12:00:00\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -138,11 +138,11 @@ testRunner.Then("the programmer should get a parsed instance that looks like \"1
         public virtual void ParseAfternoon131509()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Parse Afternoon 13:15:09", ((string[])(null)));
-#line 22
+#line 26
 this.ScenarioSetup(scenarioInfo);
-#line 23
+#line 27
 testRunner.When("the time is parsed as \"13:15:09\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 24
+#line 28
 testRunner.Then("the programmer should get a parsed instance that looks like \"13:15:09\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -154,11 +154,11 @@ testRunner.Then("the programmer should get a parsed instance that looks like \"1
         public virtual void ParseLateForTea170001()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Parse Late for Tea 17:00:01", ((string[])(null)));
-#line 26
+#line 30
 this.ScenarioSetup(scenarioInfo);
-#line 27
+#line 31
 testRunner.When("the time is parsed as \"17:00:01\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 28
+#line 32
 testRunner.Then("the programmer should get a parsed instance that looks like \"17:00:01\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -170,11 +170,11 @@ testRunner.Then("the programmer should get a parsed instance that looks like \"1
         public virtual void ParseGymTime180000()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Parse Gym time 18:00:00", ((string[])(null)));
-#line 30
+#line 34
 this.ScenarioSetup(scenarioInfo);
-#line 31
+#line 35
 testRunner.When("the time is parsed as \"18:00:00\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 32
+#line 36
 testRunner.Then("the programmer should get a parsed instance that looks like \"18:00:00\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -186,11 +186,11 @@ testRunner.Then("the programmer should get a parsed instance that looks like \"1
         public virtual void ParseMidnight240000EndOfDay()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Parse Midnight 24:00:00 (End Of Day)", ((string[])(null)));
-#line 34
+#line 38
 this.ScenarioSetup(scenarioInfo);
-#line 35
+#line 39
 testRunner.When("the time is parsed as \"24:00:00\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 36
+#line 40
 testRunner.Then("the programmer should get a parsed instance that looks like \"24:00:00\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -202,9 +202,9 @@ testRunner.Then("the programmer should get a parsed instance that looks like \"2
         public virtual void ParseNull()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Parse null", ((string[])(null)));
-#line 42
+#line 46
 this.ScenarioSetup(scenarioInfo);
-#line 43
+#line 47
 testRunner.Then("the programmer should get a parse error in the time portion", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -216,11 +216,11 @@ testRunner.Then("the programmer should get a parse error in the time portion", (
         public virtual void ParseEmptyString()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Parse empty string", ((string[])(null)));
-#line 45
+#line 49
 this.ScenarioSetup(scenarioInfo);
-#line 46
+#line 50
 testRunner.When("the time is parsed as \"\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 47
+#line 51
 testRunner.Then("the programmer should get a parse error in the time portion", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -232,11 +232,11 @@ testRunner.Then("the programmer should get a parse error in the time portion", (
         public virtual void ParseWhitespaceString()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Parse whitespace string", ((string[])(null)));
-#line 49
+#line 53
 this.ScenarioSetup(scenarioInfo);
-#line 50
+#line 54
 testRunner.When("the time is parsed as \" \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 51
+#line 55
 testRunner.Then("the programmer should get a parse error in the time portion", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -248,11 +248,11 @@ testRunner.Then("the programmer should get a parse error in the time portion", (
         public virtual void ParseAsdf()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Parse asdf", ((string[])(null)));
-#line 53
+#line 57
 this.ScenarioSetup(scenarioInfo);
-#line 54
+#line 58
 testRunner.When("the time is parsed as \"asdf\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 55
+#line 59
 testRunner.Then("the programmer should get a parse error in the time portion", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -264,11 +264,11 @@ testRunner.Then("the programmer should get a parse error in the time portion", (
         public virtual void Parse11()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Parse 11", ((string[])(null)));
-#line 57
+#line 61
 this.ScenarioSetup(scenarioInfo);
-#line 58
+#line 62
 testRunner.When("the time is parsed as \"11\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 59
+#line 63
 testRunner.Then("the programmer should get a parse error in the time portion", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -280,11 +280,11 @@ testRunner.Then("the programmer should get a parse error in the time portion", (
         public virtual void Parse11AA00()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Parse 11:AA:00", ((string[])(null)));
-#line 61
+#line 65
 this.ScenarioSetup(scenarioInfo);
-#line 62
+#line 66
 testRunner.When("the time is parsed as \"11:AA:00\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 63
+#line 67
 testRunner.Then("the programmer should get a parse error in the time portion", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -296,11 +296,11 @@ testRunner.Then("the programmer should get a parse error in the time portion", (
         public virtual void CtorMidnight000000BeginningOfDay()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ctor Midnight 00:00:00 (Beginning Of Day)", ((string[])(null)));
-#line 73
+#line 77
 this.ScenarioSetup(scenarioInfo);
-#line 74
+#line 78
 testRunner.When("the time is constructed using 0, 0, 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 75
+#line 79
 testRunner.Then("the programmer should get a constructed instance that looks like \"00:00:00\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -312,11 +312,11 @@ testRunner.Then("the programmer should get a constructed instance that looks lik
         public virtual void CtorMorning080411()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ctor Morning 08:04:11", ((string[])(null)));
-#line 77
+#line 81
 this.ScenarioSetup(scenarioInfo);
-#line 78
+#line 82
 testRunner.When("the time is constructed using 8, 4, 11", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 79
+#line 83
 testRunner.Then("the programmer should get a constructed instance that looks like \"08:04:11\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -328,11 +328,11 @@ testRunner.Then("the programmer should get a constructed instance that looks lik
         public virtual void CtorNoon120000()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ctor Noon 12:00:00", ((string[])(null)));
-#line 81
+#line 85
 this.ScenarioSetup(scenarioInfo);
-#line 82
+#line 86
 testRunner.When("the time is constructed using 12, 0, 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 83
+#line 87
 testRunner.Then("the programmer should get a constructed instance that looks like \"12:00:00\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -344,11 +344,11 @@ testRunner.Then("the programmer should get a constructed instance that looks lik
         public virtual void CtorAfternoon131509()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ctor Afternoon 13:15:09", ((string[])(null)));
-#line 85
+#line 89
 this.ScenarioSetup(scenarioInfo);
-#line 86
+#line 90
 testRunner.When("the time is constructed using 13, 15, 9", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 87
+#line 91
 testRunner.Then("the programmer should get a constructed instance that looks like \"13:15:09\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -360,11 +360,11 @@ testRunner.Then("the programmer should get a constructed instance that looks lik
         public virtual void CtorLateForTea170001()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ctor Late for Tea 17:00:01", ((string[])(null)));
-#line 89
+#line 93
 this.ScenarioSetup(scenarioInfo);
-#line 90
+#line 94
 testRunner.When("the time is constructed using 17, 0, 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 91
+#line 95
 testRunner.Then("the programmer should get a constructed instance that looks like \"17:00:01\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -376,11 +376,11 @@ testRunner.Then("the programmer should get a constructed instance that looks lik
         public virtual void CtorGymTime180000()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ctor Gym time 18:00:00", ((string[])(null)));
-#line 93
+#line 97
 this.ScenarioSetup(scenarioInfo);
-#line 94
+#line 98
 testRunner.When("the time is constructed using 18, 0, 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 95
+#line 99
 testRunner.Then("the programmer should get a constructed instance that looks like \"18:00:00\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -392,11 +392,11 @@ testRunner.Then("the programmer should get a constructed instance that looks lik
         public virtual void CtorMidnight240000EndOfDay()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ctor Midnight 24:00:00 (End Of Day)", ((string[])(null)));
-#line 97
+#line 101
 this.ScenarioSetup(scenarioInfo);
-#line 98
+#line 102
 testRunner.When("the time is constructed using 24, 0, 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 99
+#line 103
 testRunner.Then("the programmer should get a constructed instance that looks like \"24:00:00\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -408,11 +408,11 @@ testRunner.Then("the programmer should get a constructed instance that looks lik
         public virtual void CtorHours0()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ctor Hours < 0", ((string[])(null)));
-#line 106
+#line 110
 this.ScenarioSetup(scenarioInfo);
-#line 107
+#line 111
 testRunner.When("the time is constructed using -1, 0, 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 108
+#line 112
 testRunner.Then("the programmer should get a constructor error in the hours portion", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -424,11 +424,11 @@ testRunner.Then("the programmer should get a constructor error in the hours port
         public virtual void CtorHours24()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ctor Hours > 24", ((string[])(null)));
-#line 110
+#line 114
 this.ScenarioSetup(scenarioInfo);
-#line 111
+#line 115
 testRunner.When("the time is constructed using 25, 0, 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 112
+#line 116
 testRunner.Then("the programmer should get a constructor error in the hours portion", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -440,11 +440,11 @@ testRunner.Then("the programmer should get a constructor error in the hours port
         public virtual void CtorMinutes0()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ctor Minutes < 0", ((string[])(null)));
-#line 116
+#line 120
 this.ScenarioSetup(scenarioInfo);
-#line 117
+#line 121
 testRunner.When("the time is constructed using 0, -1, 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 118
+#line 122
 testRunner.Then("the programmer should get a constructor error in the minutes portion", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -456,11 +456,11 @@ testRunner.Then("the programmer should get a constructor error in the minutes po
         public virtual void CtorMinutes59()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ctor Minutes > 59", ((string[])(null)));
-#line 120
+#line 124
 this.ScenarioSetup(scenarioInfo);
-#line 121
+#line 125
 testRunner.When("the time is constructed using 0, 60, 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 122
+#line 126
 testRunner.Then("the programmer should get a constructor error in the minutes portion", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -472,11 +472,11 @@ testRunner.Then("the programmer should get a constructor error in the minutes po
         public virtual void CtorHours24Minutes0()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ctor Hours = 24, minutes > 0", ((string[])(null)));
-#line 124
+#line 128
 this.ScenarioSetup(scenarioInfo);
-#line 125
+#line 129
 testRunner.When("the time is constructed using 24, 1, 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 126
+#line 130
 testRunner.Then("the programmer should get a constructor error in the minutes portion", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -488,11 +488,11 @@ testRunner.Then("the programmer should get a constructor error in the minutes po
         public virtual void CtorSeconds0()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ctor Seconds < 0", ((string[])(null)));
-#line 130
+#line 134
 this.ScenarioSetup(scenarioInfo);
-#line 131
+#line 135
 testRunner.When("the time is constructed using 0, 0, -1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 132
+#line 136
 testRunner.Then("the programmer should get a constructor error in the seconds portion", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -504,11 +504,11 @@ testRunner.Then("the programmer should get a constructor error in the seconds po
         public virtual void CtorSeconds59()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ctor Seconds > 59", ((string[])(null)));
-#line 134
+#line 138
 this.ScenarioSetup(scenarioInfo);
-#line 135
+#line 139
 testRunner.When("the time is constructed using 0, 0, 60", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 136
+#line 140
 testRunner.Then("the programmer should get a constructor error in the seconds portion", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -520,11 +520,11 @@ testRunner.Then("the programmer should get a constructor error in the seconds po
         public virtual void CtorHours24Seconds0()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ctor Hours = 24, seconds > 0", ((string[])(null)));
-#line 138
+#line 142
 this.ScenarioSetup(scenarioInfo);
-#line 139
+#line 143
 testRunner.When("the time is constructed using 24, 0, 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 140
+#line 144
 testRunner.Then("the programmer should get a constructor error in the seconds portion", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

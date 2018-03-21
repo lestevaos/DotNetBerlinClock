@@ -3,6 +3,10 @@
     I want to be able to store a Point in Time information in a Data Structure
     So that I can better represent Point in Time information inside the applications I create
 
+# OBSOLETE:
+#     This feature-like test was created just as an exercice on the BDD/SpecFlow approach.
+#     The traditional Unit Tests for the Time class can be found in the TimeTests.cs file.
+
 # Parse
 
 #   Expected successes

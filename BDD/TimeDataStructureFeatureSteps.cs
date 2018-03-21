@@ -4,6 +4,7 @@ using TechTalk.SpecFlow;
 
 namespace BerlinClock
 {
+    [Obsolete]
     [Binding]
     public class TimeDataStructureFeatureSteps
     {
